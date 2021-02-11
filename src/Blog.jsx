@@ -2,6 +2,7 @@ import React from 'react';
 import Article from './Article';
 import * as FooBar from './components/FooBar'
 import Hoge from './components/hoge'
+import Fuga from './components/fuga'
 class Blog extends React.Component {
   constructor(props){
     super(props);
@@ -52,6 +53,7 @@ class Blog extends React.Component {
         <FooBar.Foo />
         <FooBar.Bar />
         <Hoge />
+        <Fuga />
       </>
     )
   }
