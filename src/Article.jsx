@@ -1,4 +1,5 @@
 import React from 'react';
+import LikeButton from './LikeButton';
 
 const Article = (props) => {
   return (
@@ -10,6 +11,7 @@ const Article = (props) => {
         <input type="button" value="いいね" onClick={()=> props.countUp() } />
         <p> {props.count} </p>
       </div>
+      <LikeButton count = {props.count} />
     </React.Fragment>
   )
 };
